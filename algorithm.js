@@ -290,6 +290,33 @@ return z
       // take organized digits and sume the top 5
    }
 
-   let fuckery = [ 1, 2, 3, 4]
 
-   fuckery.reverse()
+
+
+// find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
+// input: 0101111001    k=3  output:null
+// input: 93272538      k= 4 output:7
+
+let input = [0,1,0,1,1,1,0,0,1]
+
+function findKthElem(x ){
+      //mergre sort
+//find unique 
+//return kth elem
+}
+
+// fibonacci below works, but is slow
+
+const fib = (n) => {
+   if (n <= 2 ) return 1;
+   return fib(n -1) + fib(n - 2);
+ }
+ 
+ console.log(fib(6));
+ console.log(fib(8));
+ console.log(fib(9));
+
+ //implement memoization
+
+
+ 
