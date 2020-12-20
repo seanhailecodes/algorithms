@@ -313,10 +313,22 @@ const fib = (n) => {
  }
  
  console.log(fib(6));
- console.log(fib(8));
- console.log(fib(9));
+ //implement memoization! below is a better way
+ //try an object instead, keys will be arg to fn, value will be return val
+ const fib = (n, memo = {} ) => {
+   //add memo and assign to empty {{}, as an argument to () 
+    // memo stores data 'n' as the key, and values are return values of function ***the cheat =)**
+    if (n in memo) return memo[n];
+  // added to function above, which checks to see if this arg is in (
+  
+   if (n <= 2 ) return 1;
+   memo[n] = fib(n -1, memo) + fib(n - 2, memo);
+   return memo[n];
 
- //implement memoization
+      //if memo is not in function, ASSIGN IT! as aopposed to returning instead it =) 
+ }
 
+ console.log(fib(50))
+//this (50) now runs with no problem, before it would be slow or crash
 
  
