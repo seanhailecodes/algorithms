@@ -331,4 +331,4 @@ const fib = (n) => {
  console.log(fib(50))
 //this (50) now runs with no problem, before it would be slow or crash
 
- 
+// A traveler on a 2d grid begins their travels from the top left corner and the goal is to travel to the bottom-right corner. You may only move down or right. 
