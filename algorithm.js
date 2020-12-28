@@ -349,7 +349,7 @@ function gridTraveler2D (m, n) {
    //are arguments in memo^
   if (m === 1 && n === 1) return 1 
    if (m === 0 || n === 0) return 0
-    memo[key] = gridTraveler2D(m-1,n) +gridTraveler2D(m, n-1)
+    memo[key] = gridTraveler2D(m-1,n, memo) +gridTraveler2D(m, n-1, memo)
     return memo[key]
     }
  
