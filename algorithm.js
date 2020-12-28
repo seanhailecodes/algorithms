@@ -340,3 +340,17 @@ function gridTraveler2D (m, n) {
      }
   
   console.log(gridTraveler2D(3,3))
+
+  //much better way to code this^ ,memoize it 
+
+  function gridTraveler2D(m, n, memo = {}){
+   const key = m + ',' + n
+   if (key in memo) return memo[key]
+   //are arguments in memo^
+  if (m === 1 && n === 1) return 1 
+   if (m === 0 || n === 0) return 0
+    memo[key] = gridTraveler2D(m-1,n) +gridTraveler2D(m, n-1)
+    return memo[key]
+    }
+ 
+ console.log(gridTraveler2D(3,3))
