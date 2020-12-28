@@ -295,7 +295,7 @@ return z
 
 // find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
 // input: 0101111001    k=3  output:null
-// input: 93272538      k= 4 output:7
+// input: 93272538      k= 4 output:
 
 let input = [0,1,0,1,1,1,0,0,1]
 
@@ -332,3 +332,11 @@ const fib = (n) => {
 //this (50) now runs with no problem, before it would be slow or crash
 
 // A traveler on a 2d grid begins their travels from the top left corner and the goal is to travel to the bottom-right corner. You may only move down or right. 
+
+function gridTraveler2D (m, n) {
+   if (m === 1 && n === 1) return 1 
+    if (m === 0 || n === 0) return 0
+     return gridTraveler2D(m-1,n) +gridTraveler2D(m, n-1)
+     }
+  
+  console.log(gridTraveler2D(3,3))
