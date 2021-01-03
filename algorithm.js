@@ -354,3 +354,7 @@ function gridTraveler2D (m, n) {
     }
  
  console.log(gridTraveler2D(3,3))
+
+ //is the targetSum generatable using some numbers in Array, return True/False
+ 
+function canSum
