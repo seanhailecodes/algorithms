@@ -291,7 +291,7 @@ return z
    }
 
 
-
+˚
 
 // find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
 // input: 0101111001    k=3  output:null
@@ -358,3 +358,12 @@ function gridTraveler2D (m, n) {
  //is the targetSum generatable using some numbers in Array, return True/False
  
 function canSum
+
+
+//convert a String to Int
+const firstInteger = 4;
+const secondInteger = '12'
+
+let newSecondInt = parseInt(secondInteger, 10)
+let sum = (firstInteger + newSecondInt)
+console.log(sum)
