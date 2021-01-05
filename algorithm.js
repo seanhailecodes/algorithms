@@ -384,3 +384,27 @@ function performOperation(secondInteger, secondDecimal, secondString) {
    // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
        console.log(firstString + secondString)
 }
+
+
+//###fizzbuzz
+
+const data = [1, 2, 3, 4, 5, 6, 7 , 8 ,9 ,10, 11, 12, 13, 14 , 15]
+
+for (var i = 1; i <= 16; i++){
+
+  if (i % 3 == 0) {
+    console.log('Fizz')
+  }
+  if (i % 5 == 0) {
+    console.log('Buzz')
+  }
+if ( (i % 3 !== 0) && (i % 5 !== 0) ) {
+    console.log('FizzBuzz')
+  }
+  else {
+    console.log(i)
+  }
+}
+
+
+//###better fizzbuzz
