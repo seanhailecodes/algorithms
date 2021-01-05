@@ -406,5 +406,35 @@ if ( (i % 3 !== 0) && (i % 5 !== 0) ) {
   }
 }
 
+var text = '42px';
+var integer = parseInt(text, 10);
+// returns 42
 
 //###better fizzbuzz
+
+for (var i = 1; i <= 16; i++){
+
+   let output = ''
+   
+   if( i % 3 == 0) { output += 'Fizz'}
+   if( i % 5 == 0) { output += 'Buzz'}
+   
+   if(output == '') { output = i }
+   
+   console.log(output)
+   
+   }
+//### Parse an Integer - parseInt The parseInt() method converts a string into an integer (a whole number).
+// secondary option is Number()- Sometimes it’s an integer. Other times it’s a point number. Sometimes it NaN. iffy all around
+
+parseInt accepts two arguments. The first argument is the string to convert. The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
+
+var text = '42px';
+var integer = parseInt(text, 10);
+      // returns 42\
+
+//### Parse Float The parseFloat() method converts a string into a point number (a number with decimal points). You can even pass in strings with random text in them.
+
+var text = '3.14someRandomStuff';
+var pointNum = parseFloat(text);
+      // returns 3.14
