@@ -291,7 +291,7 @@ return z
    }
 
 
-
+˚
 
 // find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
 // input: 0101111001    k=3  output:null
@@ -355,6 +355,7 @@ function gridTraveler2D (m, n) {
  
  console.log(gridTraveler2D(3,3))
 
+<<<<<<< HEAD
 
 
 
@@ -434,3 +435,87 @@ function uniquePairs(arr,sum){
      // The 's' variable above should be printed first.
  
  }
+=======
+ //is the targetSum generatable using some numbers in Array, return True/False
+ 
+function canSum
+
+//###hackerrank, Int and Str work
+
+function performOperation(secondInteger, secondDecimal, secondString) {
+   // Declare a variable named 'firstInteger' and initialize with integer value 4.
+       const firstInteger = 4;
+   
+   // Declare a variable named 'firstDecimal' and initialize with floating-point value 4.0.
+       const firstDecimal = 4.0;
+       
+   // Declare a variable named 'firstString' and initialize with the string "HackerRank".
+       const firstString = 'HackerRank ';
+   
+   // Write code that uses console.log to print the sum of the 'firstInteger' and 'secondInteger' (converted to a Number        type) on a new line.
+   
+       let newSecondInt = parseInt(secondInteger, 10)
+       let sum = (firstInteger + newSecondInt)
+       console.log(sum)
+   // Write code that uses console.log to print the sum of 'firstDecimal' and 'secondDecimal' (converted to a Number            type) on a new line.
+   
+       console.log( parseFloat(secondDecimal) + 
+       parseFloat(firstDecimal) )
+  
+   // Write code that uses console.log to print the concatenation of 'firstString' and 'secondString' on a new line. The        variable 'firstString' must be printed first.
+       console.log(firstString + secondString)
+}
+
+
+//###fizzbuzz
+
+const data = [1, 2, 3, 4, 5, 6, 7 , 8 ,9 ,10, 11, 12, 13, 14 , 15]
+
+for (var i = 1; i <= 16; i++){
+
+  if (i % 3 == 0) {
+    console.log('Fizz')
+  }
+  if (i % 5 == 0) {
+    console.log('Buzz')
+  }
+if ( (i % 3 !== 0) && (i % 5 !== 0) ) {
+    console.log('FizzBuzz')
+  }
+  else {
+    console.log(i)
+  }
+}
+
+var text = '42px';
+var integer = parseInt(text, 10);
+// returns 42
+
+//###better fizzbuzz
+
+for (var i = 1; i <= 16; i++){
+
+   let output = ''
+   
+   if( i % 3 == 0) { output += 'Fizz'}
+   if( i % 5 == 0) { output += 'Buzz'}
+   
+   if(output == '') { output = i }
+   
+   console.log(output)
+   
+   }
+//### Parse an Integer - parseInt The parseInt() method converts a string into an integer (a whole number).
+// secondary option is Number()- Sometimes it’s an integer. Other times it’s a point number. Sometimes it NaN. iffy all around
+
+parseInt accepts two arguments. The first argument is the string to convert. The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
+
+var text = '42px';
+var integer = parseInt(text, 10);
+      // returns 42\
+
+//### Parse Float The parseFloat() method converts a string into a point number (a number with decimal points). You can even pass in strings with random text in them.
+
+var text = '3.14someRandomStuff';
+var pointNum = parseFloat(text);
+      // returns 3.14
