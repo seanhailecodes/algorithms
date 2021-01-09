@@ -354,3 +354,83 @@ function gridTraveler2D (m, n) {
     }
  
  console.log(gridTraveler2D(3,3))
+
+
+
+
+//  Given an int array nums and an int target, find how many unique pairs in the array such that their sum is equal to target. Return the number of pairs.
+
+//questions to ask here, should I be using ** reduce? **map? - reduce requires a callback with at least 2 params, perhaps an accumulator that requires a value that gets returned once the return() runs 
+// - the 2nd argument (called element) holds the value of each element
+
+
+function uniquePairs(arr,sum){
+   //create an empty array, which goes in to the main array (nums)
+   let pairs = []
+   //create a hash table to hold the list of numbers provided in any given example 
+   let hashTable = []
+
+  for(let i = 0; i <arr.length; i++){
+      let curentNum = arr[i]
+      let difference = uniquePairs - curentNum
+         if (hashTable.includes(difference)){
+            pairs.push([currNum, difference])
+         }
+         hashTable.push(curentNum)
+    }
+            return pairs
+   }
+
+   let num = 6
+   let arr = [ 1, 5, 1, 5]
+
+
+ // can sum function 'canSum(targetSum, numbers)' that takes in a targetSum and an array of numbers as arguments
+
+ process.stdin.resume();
+ process.stdin.setEncoding('ascii');
+ 
+ var input_stdin = "";
+ var input_stdin_array = "";
+ var input_currentline = 0;
+ 
+ process.stdin.on('data', function (data) {
+     input_stdin += data;
+ });
+ 
+ process.stdin.on('end', function () {
+     input_stdin_array = input_stdin.split("\n");
+     main();    
+ });
+ 
+ // Reads complete line from STDIN
+ function readLine() {
+     return input_stdin_array[input_currentline++];
+ }
+ 
+ function main() {
+     var i = 4
+     var d = 4.0
+     var s = "HackerRank "
+     // Declare second integer, double, and String variables.
+         let i2  
+         let d2  
+         let s2 
+     // Read and save an integer, double, and String to your variables.
+     //what might this mean exactly? To call the readline function and read (in JAVA read means return in JS), an integer, a double (in JAVA means more bytes in JS means float) and String
+         i2 = parseInt((readLine()))  
+         d2 = parseFloat((readLine()))
+         s2 = toString((readLine()))
+     // Print the sum of both integer variables on a new line.
+         let sum = i + i2
+         
+         
+     // Print the sum of the double variables on a new line.
+         let doubleSum = (d2 + d).toFixed(1) //----study this more - why is toFixed here?
+          console.log(doubleSum)
+        
+ 
+     // Concatenate and print the String variables on a new line
+     // The 's' variable above should be printed first.
+ 
+ }
