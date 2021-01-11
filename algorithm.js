@@ -409,22 +409,7 @@ function uniquePairs(arr,sum){
      return input_stdin_array[input_currentline++];
  }
  
- function main() {
-     var i = 4
-     var d = 4.0
-     var s = "HackerRank "
-     // Declare second integer, double, and String variables.
-         let i2  
-         let d2  
-         let s2 
-     // Read and save an integer, double, and String to your variables.
-     //what might this mean exactly? To call the readline function and read (in JAVA read means return in JS), an integer, a double (in JAVA means more bytes in JS means float) and String
-         i2 = parseInt((readLine()))  
-         d2 = parseFloat((readLine()))
-         s2 = toString((readLine()))
-     // Print the sum of both integer variables on a new line.
-         let sum = i + i2
-         
+        
          
      // Print the sum of the double variables on a new line.
          let doubleSum = (d2 + d).toFixed(1) //----study this more - why is toFixed here?
