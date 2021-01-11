@@ -519,3 +519,5 @@ var integer = parseInt(text, 10);
 var text = '3.14someRandomStuff';
 var pointNum = parseFloat(text);
       // returns 3.14
+
+      
