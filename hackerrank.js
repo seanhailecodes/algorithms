@@ -51,3 +51,35 @@ let total_cost=meal_cost+(tip_percent*meal_cost/100)+(tax_percent*meal_cost/100)
 let rounded_cost=Math.round(total_cost)
 console.log(rounded_cost)
 }
+
+
+// ###day3, Conditionals
+//
+
+ // if N is 0, (possible edgecase) 
+ 
+    // if N is odd print Weird 
+    if (N % 2 != 0) {
+        console.log('Weird')
+        }
+    //    If N is even and in the inclusive range of 2 to 5 , print Not Weird
+        if (N % 2 == 0 && (N > 2 && N < 5)){
+        console.log('Not Weird')
+        }
+    //   If N is even and in the inclusive range of 6 to , 20 print Weird
+        if (N % 2 == 0 && (N > 6 && N <= 19)){
+        console.log('Weird')
+        }
+    //    If N is even and greater than 20 , print Not Weird
+        if (N % 2 == 0 && (N > 20)){
+        console.log('Not Weird')
+        }
+
+        // Above ^^ does not handle edge case of 3 - below does
+
+        if ((N % 2 !== 0) || (N >= 6 && N <= 20)) {
+            console.log('Weird');
+        } else {
+            console.log('Not Weird')
+        }
+    }

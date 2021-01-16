@@ -506,3 +506,9 @@ var pointNum = parseFloat(text);
       // returns 3.14
 
       
+
+
+      #this.get("ds.USER_ID").toString().toLowerCase()==
+      #this.get("TOKEN_SUBJECT").toString().toLowerCase()&&
+      #this.get("ds.COMPANY_NAME_ID").toString().toLowerCase()==
+      #this.get("companyID").toString().toLowerCase()
