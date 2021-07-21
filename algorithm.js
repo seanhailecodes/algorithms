@@ -1,13 +1,13 @@
 // recusrsion
 
-function efun(num){
+function someFun(num){
    if (num==0)
     return 1 
        else
-    return num * efun(num-2)
+    return num * someFun(num-2)
   }
 
-console.log(efun(8))
+console.log(someFun(8))
 
 
 
@@ -290,8 +290,45 @@ return z
       // take organized digits and sume the top 5
    }
 
+   ˚
 
-˚
+// function work, fraction 
+function findBiggestFraction(a,b) {
+   let result
+ a>b ? result = ['firstFraction', a]: result = ['secondFraction', b]
+ return result
+ }
+ 
+ let firstFraction = 3/4
+ let secondFraction = 5/7
+ 
+ let fractionResult = findBiggestFraction(firstFraction, secondFraction)
+ 
+ console.log("First fraction result: ", firstFraction)
+ console.log("Second fraction result: ", secondFraction)
+ console.log('Fraction' + fractionResult[0] + ' with a value of ' + fractionResult[1] + 'is the biggest!')
+ 
+
+ //anonymous function same as above
+
+
+let theBiggest = function(a,b){
+   let result
+   a>b ? result = [ 'a', a ] : result ['b'. b]
+   return result
+ }
+ 
+ console.log(theBiggest(7/9, 13/25))
+
+// immediately invoked function
+
+let theBiggest = (function(a,b){
+   let result
+   a>b ? result = [ 'a', a ] : result ['b'. b]
+   return result
+ })(7/9, 13/25)
+ 
+ console.log(theBiggest)
 
 // find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
 // input: 0101111001    k=3  output:null
@@ -424,7 +461,7 @@ for (var i = 1; i <= 16; i++){
    console.log(output)
    
    }
-//### Parse an Integer - parseInt The parseInt() method converts a string into an integer (a whole number).
+//### Parse an Integer - parseInt The parseInt() method converts a string into an integ`er (a whole number).
 // secondary option is Number()- Sometimes it’s an integer. Other times it’s a point number. Sometimes it NaN. iffy all around
 
 parseInt accepts two arguments. The first argument is the string to convert. The second argument is called the radix. This is the base number used in mathematical systems. For our use, it should always be 10.
@@ -438,3 +475,6 @@ var integer = parseInt(text, 10);
 var text = '3.14someRandomStuff';
 var pointNum = parseFloat(text);
       // returns 3.14
+
+
+
