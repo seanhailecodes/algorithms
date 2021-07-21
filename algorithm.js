@@ -330,6 +330,23 @@ let theBiggest = (function(a,b){
  
  console.log(theBiggest)
 
+ //Object, using course in this example
+
+ let course = { 
+   title: 'How to be a thug',
+   instructor: 'Me!',
+   level: 100,
+   gangster: true,
+   views: 0,
+   updateViews: function(){
+     return ++course.views
+   }
+ }
+ 
+ console.log(course.views)
+ course.updateViews()
+ console.log(course.views)
+
 // find smallest kth elem in an unsortted array, f smallest kth elem not present, return NULL
 // input: 0101111001    k=3  output:null
 // input: 93272538      k= 4 output:
